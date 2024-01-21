@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TachoWagon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Tachowagon</h1>
+        <p><strong>Battery voltage: </strong><span id = "battery">%BATTERY%</span><br />
+           <strong>MAC address: </strong><span id = "mac_address">%MACADDRESS%</span><br />
+           <strong>Firmware version: </strong><span id = "FW_VERSION">%FIRMWARE%</span><br />
+           <strong>Temperature: </strong><span id = "temperature">%TEMP%</span> <strong>&#176;C</strong><br /></p>
+        
+        <p><strong>Distance cm: </strong><span id = "distance_cm">%DISTANCE_CM%</span><br />
+           <strong>Speed CM/s: </strong><span id = "speed_cms">%SPEED_CMS%</span><br />
+           <strong>Max CM/s: </strong><span id = "max_speed_cms">%MAX_SPEED_CMS%</span><br /></p>
+
+        <p><strong>Scale KM: </strong><span id = "distance_h0">%KILOMETER_H0%</span><br />
+           <strong>Scale KM/h: </strong><span id = "speed_h0">%KMH_H0%</span><br />
+           <strong>Max KM/h: </strong><span id = "max_speed_h0">%MAX_KMH_H0%</span><br /></p>
+
+        <p><strong>Pitch (y-axis): </strong><span id = "pitch">%PITCH%</span> deg.<br />
+          <strong>Roll (x-axis): </strong><span id = "roll">%ROLL%</span> deg.<br /></p>
+
+        <p><input type="button" onclick="resetValues(1)" id="resetButton1" class="reset-button" value = "Reset distance">
+           <input type="button" onclick="resetValues(2)" id="resetButton2" class="reset-button" value = "Reset speed">
+           <input type="button" onclick="resetValues(3)" id="resetButton3" class="reset-button" value = "Reset angles">
+         </p>
+        <p>
+            Warning lights
+            <label class="switch">
+               <input type="checkbox" id="Leds-toggle" name="ledsCheckBox" onclick="ledsToggle();" />
+               <span class="slider-orange round"></span>
+             </label>
+         </p>
+         <p>
+            Get sensor Json data<a class="button" href=/get-json>Get Json</a>
+            Check for OTA Update<a class="button" href=/check_update>Check Update</a>
+            Change setup<a class="button" href="setup.html">Setup</a>
+         </p>
+
+      <script src="Settingsscript.js"></script>
+
+    </body>
+</html>

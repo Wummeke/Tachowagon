@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Setup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Setup</h1>
+  <section class="setup">
+  <div class="content">
+    <div class="card-grid">
+      <div class="card">
+        <form>
+          <div class="section">
+            <h3>Hardware Settings</h3>
+            <div class="buttonsection">
+              <label class="checkBoxLabel" for="screenrotated">Flip screen</label>
+              <label class="switch">
+              <input type="checkbox" id="screenrotated" name="rotationCheckBox"><span class="slider-orange round"></span></label>
+            </div>
+            <div class="buttonsection">
+              <label class="checkBoxLabel" for="flashing">Leds flashing on start</label>
+              <label class="switch">
+              <input type="checkbox" id="flashing" name="ledsCheckBox"><span class="slider-orange round"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="section">
+            <h3>WiFi Settings</h3>
+            <div class="inputfield"><input type="text" id ="hostname" name="hostname" placeholder="Hostname"></div>
+            <div class="inputfield"><input type="text" id ="accesspoint" name="accesspoint" placeholder="SSID"></div>
+            <div class="inputfield"><input type="password" id ="password" name="password" placeholder="Password"></div>
+          </div>  
+          <div class="section">
+            <h3>MQTT Settings</h3>
+            <div class="buttonsection">
+              <label class="checkBoxLabel" for="mqttenabled">Enable MQTT</label>
+              <label class="switch">
+                <input type="checkbox" id="mqttenabled" name="mqttenabled"><span class="slider-orange round"></span>
+              </label>
+            </div>
+            <div class="buttonsection">
+              <label class="checkBoxLabel" for="mqttretain">Retain messages</label>
+              <label class="switch">
+                <input type="checkbox" id="mqttretain" name="mqttretain"><span class="slider-orange round"></span>
+              </label>
+            </div>
+            <div class="inputfield"><input type="text" id ="mqttserver" name="mqttserver" placeholder="MQTT Server address"></div>
+            <div class="inputfield"><input type="text" id ="mqttport" name="mqttport" placeholder="MQTT Port"></div>
+            <div class="inputfield"><input type="text" id ="mqttuser" name="mqttuser" placeholder=" MQTT User"></div>
+            <div class="inputfield"><input type="password" id ="mqttpassword" name="mqttpassword" placeholder="MQTT Password"></div>
+            <div class="inputfield"><input type="text" id ="mqtttopic" name="mqtttopic" placeholder=" MQTT basetopic"></div>
+          </div>
+          <div class="section">
+            <input type ="submit" value ="Submit" class="button"><a class="button" href="/">Home</a>
+          </div>
+            
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+  <script src="Settingsscript.js"></script>
+</body>
+</html>

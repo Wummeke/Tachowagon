@@ -1,0 +1,259 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #444444;
+  margin: 50px auto 30px;
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: #444444;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* span {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+} */
+
+.topnav {
+  overflow: hidden;
+  background-color: #15023a;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #AAAAFF;
+  color: white;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.topnav label {
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.button {
+  display: block;
+  width: 150px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 13px 13px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px auto 35px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #9f9fff;
+}
+
+.button:active {
+  background-color: #7070fa;
+}
+
+.reset-button {
+  display: block;
+  width: 150px;
+  background-color: #d0451b;
+  border: none;
+  color: white;
+  padding: 13px 13px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px auto 35px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.reset-button:hover {
+  background-color: #bc3315;
+}
+
+.reset-button:active {
+  background-color: #992106;
+}
+
+.content {
+  padding: 30px;
+}
+
+.card-grid {
+  max-width: 700px;
+  margin: 0 auto;
+  display: inline-grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.state {
+  font-size: 1.2rem;
+  color: #260C8D;
+}
+
+.first {
+  text-align: left;
+}
+
+.inputfield{
+  margin-bottom: 2px;
+}
+
+.checkBoxLabel {
+  font-size: 13px;
+}
+
+input[type="number"] {
+  width: 3em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+
+/*orange
+-------------------------
+*/
+.slider-orange {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FEAB6D;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-orange:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-orange {
+  background-color: #FC7307;
+}
+
+input:focus + .slider-orange {
+  box-shadow: 0 0 1px #FC7307;
+}
+
+input:checked + .slider-orange:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-orange.round {
+  border-radius: 34px;
+}
+
+.slider-orange.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+void setupSpiffs() {
+    //read settings from FS json
+    Serial.println("mounting FS...");
+
+    if (SPIFFS.begin(true)){
+        Serial.println("mounted file system");
+    } else {
+        Serial.println("failed to mount FS");
+    }
+    //end read
+}
+
+int readVersionFile(fs::FS &fs, const char * path){
+    File file = fs.open(path);
+    if(!file){
+        spiffs_version = 0;
+    }
+    else {
+        while(file.available()){
+        String line = file.readStringUntil('\n');
+        spiffs_version = line.toInt();
+        }
+        file.close();
+    }
+    Serial.print("Spiffs version: ");
+    Serial.println(spiffs_version);
+    return spiffs_version;
+}

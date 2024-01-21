@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TachoWagon - check for OTA Update</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <style>
+        html {
+            font-family: Helvetica;
+            display: inline-block;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        body {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #444444;
+            margin: 50px auto 30px;
+        }
+
+        h3 {
+            color: #444444;
+            margin-bottom: 50px;
+        }
+
+        .button {
+            display: block;
+            width: 100px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 13px 13px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0px auto 35px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .button-on {
+            background-color: #3498db;
+        }
+
+        .button-on:active {
+            background-color: #2980b9;
+        }
+
+        p {
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Check for update...</p>
+    <div id="countdown"></div>
+    <p>Or click here if you can't wait to go back<a class="button" href="/">Go back</a></p>
+    <script type="text/javascript">
+        var timeleft = 30;
+        var downloadTimer = setInterval(function () {
+            if (timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("countdown").innerHTML = "Finished";
+                setTimeout(function () {
+                    window.location.href = "/";
+                }, 5 * 1000);
+            } else {
+                document.getElementById("countdown").innerHTML = timeleft + " seconds remaining ";
+            }
+            timeleft -= 1;
+        }, 1000);
+    </script>
+</body>
+
+</html>
