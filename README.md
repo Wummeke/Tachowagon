@@ -1,6 +1,7 @@
 # Tachowagon for H0 scale modelrailway
 
-A more detailed description of this project in dutch can be found here: 
+A more detailed description of this project in dutch can be found here:
+ 
 https://forum.beneluxspoor.net/index.php?topic=110195.msg3222446442;topicseen#msg3222446442
 
 Thanks to the following repo's/forum topics/sites for the inspiration and code ideas:
